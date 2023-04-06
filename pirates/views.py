@@ -4,12 +4,12 @@ from django.http import HttpResponseRedirect
 from django.views import View
 from django.forms import ModelForm
 from django.urls import reverse
-
 from .models import Tesouro
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse_lazy
 from django.views.generic.list import ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.models import User
 # Create your views here.
 
 class ListarTesouros(ListView):
